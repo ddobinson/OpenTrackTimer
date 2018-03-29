@@ -8,8 +8,8 @@
 #include <Wire.h>
 #include <SoftwareSerial.h>
 
-float time0 = 0;
-float time1 = 0;
+double time0 = 0;
+double time1 = 0;
 double time2 = 0;
 double time3 = 0;
 
@@ -78,27 +78,5 @@ void loop(){
 }
 
 
-//void loop() {
-//    //if some data is sent, read it and save it in the state variable
-//    if(Serial.available() > 0){
-//      state = Serial.read();
-//      flag=0;
-//    }
-//    // if the state is 0 the led will turn off
-//    if (state == '0') {
-//        digitalWrite(ledPin, LOW);
-//        if(flag == 0){
-//          Serial.println("LED: off");
-//          flag = 1;
-//        }
-//    }
-//    // if the state is 1 the led will turn on
-//    else if (state == '1') {
-//        digitalWrite(ledPin, HIGH);
-//        if(flag == 0){
-//          Serial.println("LED: on");
-//          flag = 1;
-//        }
-//    }
-//}
+
 
